@@ -129,13 +129,13 @@ $maincolor: #1a2771;
     }
   }
 }
-@media only screen and (max-width: 1400px) and (min-width: 1300px) and (min-height: 600px) and (max-height: 700px) {
+@media only screen and (max-width: 1400px) and (min-width: 1300px) and (min-height: 600px) and (max-height: 800px) {
   .second-container {
     position: relative;
     bottom: 6rem;
     .second-cards {
       position: relative;
-      top: 2rem;
+      top: 3.5rem;
     }
   }
 
@@ -144,9 +144,9 @@ $maincolor: #1a2771;
     height: 60%;
   }
   .second-text {
-    top: 4rem;
+    top: 4.5rem;
     p {
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
   }
 }

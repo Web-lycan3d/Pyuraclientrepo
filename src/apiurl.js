@@ -5,7 +5,7 @@ const apiurl = () => {
     return "http://localhost:4000";
   }
   if (process.env.NODE_ENV === "production") {
-    return "";
+    return "https://pyura.herokuapp.com/";
   }
 };
 

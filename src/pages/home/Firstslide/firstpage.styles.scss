@@ -217,6 +217,11 @@ $maincolor: #1a2771;
     }
   }
 }
+@media only screen and (max-width: 1400px) and (min-width: 1300px) and (min-height: 600px) and (max-height: 700px) {
+  .firstpage-text-2 {
+    text-align: right;
+  }
+}
 @media only screen and (max-width: 1200px) and (min-width: 800px) {
   .firstpage-contents {
     left: 4%;
