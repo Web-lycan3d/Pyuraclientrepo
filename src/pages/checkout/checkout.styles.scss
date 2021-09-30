@@ -385,6 +385,15 @@
     }
   }
 }
+@media only screen and (max-width: 1400px) {
+  .checkout-container {
+    height: auto;
+  }
+  .checkout-details {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
 @media screen and (max-width: 1120px) {
   .checkout-contents {
     justify-content: space-between;
@@ -407,6 +416,7 @@
     }
   }
 }
+
 @media screen and (max-width: 900px) {
   .checkout-container {
     height: auto;
