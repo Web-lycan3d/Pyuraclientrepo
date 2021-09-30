@@ -1,0 +1,157 @@
+/** @format */
+$maincolor: #1a2771;
+.seventh-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.seventh-contents {
+  width: 100%;
+  height: 82%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.seventh-text {
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  left: 7%;
+  h5 {
+    font-size: 2.2rem;
+    color: $maincolor;
+    font-weight: 600;
+    margin: 0.6rem 0 2rem;
+  }
+  span {
+    font-size: 1.08rem;
+    line-height: 1.9;
+    display: block;
+    font-weight: 400;
+    color: #1a2771f3;
+    width: 85%;
+  }
+
+  button {
+    display: block;
+    margin-top: 3rem;
+    width: 9rem;
+    padding: 0.6rem 0.6rem;
+    border: 2px solid transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.85rem;
+    background: #1a2771;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    letter-spacing: 0.7px;
+    &:hover {
+      background: transparent;
+      border: 2px solid $maincolor;
+      color: black;
+    }
+  }
+}
+.seventh-img {
+  width: 60%;
+  justify-self: flex-end;
+  align-self: flex-end;
+  position: absolute;
+  bottom: -0.4rem;
+  right: 0;
+
+  z-index: -1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .seventh-text {
+    width: 55%;
+    button {
+      margin-top: 2.2rem;
+    }
+  }
+  .seventh-img {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .seventh-text {
+    width: 90%;
+    h5 {
+      font-size: 1.7rem;
+    }
+    button {
+      padding: 0.4rem 0.7rem;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .seventh-container {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    display: block;
+  }
+  .seventh-contents {
+    width: 100%;
+    height: auto;
+  }
+  .seventh-text {
+    width: 90%;
+    font-family: "Poppins", sans-serif;
+    position: unset;
+    left: 0%;
+    margin: 0 auto;
+    h5 {
+      font-size: 2.2rem;
+      color: #1a2771;
+      margin: 0.6rem 0 2rem;
+      text-align: center;
+    }
+
+    span {
+      font-size: 0.85rem;
+      display: block;
+      width: unset;
+      text-align: center;
+    }
+  }
+
+  .seventh-text button {
+    margin: 2rem auto;
+    /* margin-bottom: 2.2rem; */
+  }
+}
+@media screen and (max-width: 526px) {
+  .seventh-container {
+    height: 100vh;
+  }
+  .seventh-img {
+    width: 100%;
+    height: 55%;
+
+    bottom: -4.4rem;
+  }
+  .seventh-text {
+    width: 100%;
+
+    h5 {
+      font-size: 1.6rem;
+      color: #1a2771;
+      margin: 0.6rem 0 1.2rem;
+      text-align: center;
+    }
+    span {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 0.8rem;
+    }
+  }
+}

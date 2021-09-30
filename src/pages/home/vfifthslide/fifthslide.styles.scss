@@ -1,0 +1,131 @@
+/** @format */
+$maincolor: #1a2771;
+.fifth-container {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow-x: hidden;
+  .fifth-bg {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.fifth-contents {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.fifth-img {
+  width: 55%;
+  height: 80%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.fifth-text {
+  width: 45%;
+  font-family: "Poppins", sans-serif;
+  h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: $maincolor;
+    margin-bottom: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  span {
+    display: inline-block;
+    line-height: 1.85;
+    font-size: 1.1rem;
+    max-width: 90%;
+    font-weight: 400;
+    color: #1a2771e3;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .fifth-text {
+    margin-top: 1rem;
+
+    font-family: "Poppins", sans-serif;
+
+    h3 {
+      font-size: 1.8rem;
+    }
+    span {
+      max-width: 100%;
+      font-size: 0.9rem;
+    }
+  }
+  .fifth-img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .fifth-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .fifth-container .fifth-bg {
+    display: none;
+  }
+  .fifth-contents {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .fifth-img {
+    width: 85%;
+    height: auto;
+    padding: 12% 0% 4%;
+  }
+  .fifth-text {
+    margin-top: 1rem;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: "Poppins", sans-serif;
+
+    h3 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    span {
+      max-width: 100%;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 526px) {
+  .fifth-text {
+    h3 {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      margin-bottom: 1.8rem;
+      text-align: center;
+    }
+    span {
+      max-width: 100%;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  }
+}

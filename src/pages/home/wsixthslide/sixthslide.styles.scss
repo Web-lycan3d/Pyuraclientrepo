@@ -1,0 +1,133 @@
+/** @format */
+$maincolor: #1a2771;
+.sixth-container {
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 3rem;
+}
+.sixth-contents {
+  width: 100%;
+  height: 100%;
+}
+
+.sixth-img-header {
+  width: 700px;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.sixth-contents-main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sixth-img {
+  height: 90%;
+  img {
+    width: 120%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.sixth-text {
+  width: 45%;
+  font-family: "Poppins", sans-serif;
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $maincolor;
+    margin: 0.6rem 0 1.8rem;
+  }
+  span {
+    font-weight: 400;
+    line-height: 1.9;
+    font-weight: 400;
+    color: #1a2771e7;
+    width: 85%;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .sixth-img {
+    height: 70%;
+    width: 40%;
+    img {
+      width: 120%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .sixth-text {
+    text-align: right;
+    width: 60%;
+    padding-right: 2rem;
+    h4 {
+      font-size: 1.6rem;
+    }
+    span {
+      font-size: 0.95rem;
+      line-height: 2;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .sixth-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 3rem;
+  }
+  .sixth-contents {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .sixth-img-header {
+    width: 85%;
+    padding: 10% 0%;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  .sixth-contents-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sixth-img img {
+    width: 65%;
+    position: relative;
+    bottom: 3rem;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  .sixth-text {
+    width: 95%;
+    position: relative;
+    bottom: 2rem;
+    h4 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    span {
+      width: unset;
+      display: block;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+  }
+}

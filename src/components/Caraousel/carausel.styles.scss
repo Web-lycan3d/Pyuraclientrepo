@@ -1,0 +1,11 @@
+/** @format */
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+.BrainhubCarousel__dots {
+  width: 500px;
+  height: 500px;
+}
+.thumb-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
