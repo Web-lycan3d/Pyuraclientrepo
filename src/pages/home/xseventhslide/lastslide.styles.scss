@@ -56,7 +56,7 @@ $maincolor: #1a2771;
   }
 }
 .seventh-img {
-  width: 60%;
+  width: 50%;
   justify-self: flex-end;
   align-self: flex-end;
   position: absolute;
@@ -78,7 +78,15 @@ $maincolor: #1a2771;
     }
   }
   .seventh-img {
-    width: 70%;
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .seventh-text {
+    width: 65%;
+  }
+  .seventh-img {
+    width: 55%;
   }
 }
 @media only screen and (max-width: 1200px) and (min-width: 800px) {
@@ -102,6 +110,9 @@ $maincolor: #1a2771;
   .seventh-contents {
     width: 100%;
     height: auto;
+  }
+  .seventh-img {
+    width: 70%;
   }
   .seventh-text {
     width: 90%;
