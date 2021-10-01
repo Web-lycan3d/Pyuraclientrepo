@@ -5,10 +5,7 @@ import { Link } from "react-router-dom";
 import "./orderdetails.styles.scss";
 import OrdersList from "./OrdersList";
 
-const OrderDetails = () => {
-  let userData = {
-    orders: [],
-  };
+const OrderDetails = ({ userData }) => {
   return (
     <div className="order-details-overflow">
       {userData.orders?.length > 0 ? (
@@ -16,7 +13,7 @@ const OrderDetails = () => {
       ) : (
         <div className="no-orders">
           <h2>No orders available</h2>
-          <Link to="/user/product">Click here</Link> to Order now
+          <Link to="/user/checkout">Click here</Link> to Order now
         </div>
       )}
     </div>

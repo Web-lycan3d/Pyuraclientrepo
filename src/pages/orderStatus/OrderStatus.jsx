@@ -113,7 +113,7 @@ const OrderStatus = () => {
           <div className="order-s-box-contents">
             <h2>Order Status</h2>
 
-            {!OrderStatus ? (
+            {OrderStatus ? (
               <>
                 <p>
                   Please fill in the first box below with your{" "}
