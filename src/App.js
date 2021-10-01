@@ -1,11 +1,11 @@
 /** @format */
 import React, { Fragment, lazy, Suspense } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 
 import "./App.styles.scss";
 import Navbar from "./components/nav/Navbar";
 import Footer from "./components/footer/footer.component";
-
+import { AnimatePresence } from "framer-motion";
 const Contact = lazy(() => import("./pages/contact/contact.component"));
 const Home = lazy(() => import("./pages/home/Home"));
 const OrderStatus = lazy(() => import("./pages/orderStatus/OrderStatus"));
@@ -28,20 +28,23 @@ const App = () => {
       </div>
     );
   };
+  const location = useLocation();
   return (
     <Fragment>
       <Navbar />
       <Suspense fallback={<Loader />}>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/user/order" component={OrderStatus} />
-          <Route exact path="/user/product" component={Product} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/user/checkout" component={Checkout} />
-          <Route exact path="/admin/:id" component={AdminPanel} />
-          <Route exact path="/user/order/created" component={Ordersucces} />
-        </Switch>
+        <AnimatePresence exitBeforeEnter>
+          <Switch location={location}>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/user/order" component={OrderStatus} />
+            <Route exact path="/user/product" component={Product} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/user/checkout" component={Checkout} />
+            <Route exact path="/admin/:id" component={AdminPanel} />
+            <Route exact path="/user/order/created" component={Ordersucces} />
+          </Switch>
+        </AnimatePresence>
       </Suspense>
       <Footer />
     </Fragment>

@@ -37,17 +37,27 @@ const OrderStatus = () => {
       setLoadingState(true);
       setTimeout(() => {
         setLoadingState(false);
-        setOtpsent(true);
-        setOtpformState(true);
       }, 2000);
 
       try {
-        await api.post("/verify/user/phone", { phoneNo });
-
-        setServerErrorState(false);
+        const { data } = await api.post("/verify/user/phone", { phoneNo });
+        if (data.otpStatus) {
+          setOtpsent(true);
+          setOtpformState(true);
+          setServerErrorState(false);
+        } else {
+          setOtpsent(false);
+          setOtpresendState(false);
+          setServerErrorState(true);
+          setOtpformState(false);
+        }
       } catch (error) {
-        setServerErrorState(true);
-        setOtpsent(false);
+        if (error) {
+          setOtpsent(false);
+          setOtpresendState(false);
+          setServerErrorState(true);
+          setOtpformState(false);
+        }
       }
     }
   };
@@ -60,6 +70,7 @@ const OrderStatus = () => {
     // })
     const { data } = await api.post("/verify/user/otp", { phoneNo, userOtp });
     setOtpverState(false);
+
     if (data.verified) {
       setOtpverState(false);
       const resp = await serverUrl.get("/user/details/" + phoneNo);
@@ -73,14 +84,25 @@ const OrderStatus = () => {
     setOtpresendState(true);
     try {
       const { data } = await api.post("/verify/user/phone", { phoneNo });
+
       if (data) {
         setTimeout(() => {
           setOtpresendState(false);
         }, 1000);
+        setOtpformState(true);
         setOtpverState(false);
+      }
+      if (!data.otpStatus) {
+        setOtpsent(false);
+        setOtpresendState(false);
+        setServerErrorState(true);
+        setOtpformState(false);
       }
       setServerErrorState(false);
     } catch (error) {
+      setOtpsent(false);
+      setOtpresendState(false);
+      setOtpformState(false);
       setServerErrorState(true);
     }
   };
@@ -91,7 +113,7 @@ const OrderStatus = () => {
           <div className="order-s-box-contents">
             <h2>Order Status</h2>
 
-            {OrderStatus ? (
+            {!OrderStatus ? (
               <>
                 <p>
                   Please fill in the first box below with your{" "}

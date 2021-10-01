@@ -10,6 +10,19 @@
   font-family: "Poppins", sans-serif;
   margin: 1.5% auto 0;
 }
+.no-orders {
+  margin-top: 2rem;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #1a2771;
+  h2 {
+    color: rgb(240, 72, 72);
+    font-size: 1.6rem;
+  }
+}
 .orderdetails-header {
   display: flex;
   justify-content: space-between;

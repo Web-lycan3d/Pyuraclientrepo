@@ -5,11 +5,11 @@ import "./checkout.styles.scss";
 import validator from "validator";
 import query from "query-string";
 import { useHistory, useLocation } from "react-router";
-import { AiOutlineCloseCircle } from "react-icons/ai";
 
 import serverUrl from "../../api/api";
 import { Razorpay } from "../../components/payment/Razorpay";
 import api from "../../api/api";
+import Model from "../../Model";
 
 const discountDetails = {
   code: "code",
@@ -217,22 +217,15 @@ const Checkout = () => {
       }
     }
   };
+  const changemodalState = () => {
+    setNotVerifyUser(false);
+    // window.location.reload();
+    // location.reload();
+  };
   return (
     <>
-      {notverifyUser && (
-        <div className="not-verified-modal  ">
-          <div className="modal-contents">
-            <div className="items">
-              <h5>Verify OTP first!</h5>
-              <AiOutlineCloseCircle
-                className="close-icon"
-                onClick={() => setNotVerifyUser(false)}
-              />
-            </div>
-          </div>
-        </div>
-      )}
       <div className="checkout-container">
+        {notverifyUser && <Model modalState={changemodalState} />}
         <div className="checkout-contents">
           <div className="checkout-img">
             <img
@@ -265,7 +258,10 @@ const Checkout = () => {
                     required
                     placeholder="Phone number"
                     onChange={(e) =>
-                      setUserData({ ...userData, phonenumber: e.target.value })
+                      setUserData({
+                        ...userData,
+                        phonenumber: e.target.value,
+                      })
                     }
                   />
                   {btnloaderState ? (
@@ -335,7 +331,10 @@ const Checkout = () => {
                       type="text"
                       name="firstname"
                       onChange={(e) =>
-                        setUserData({ ...userData, firstname: e.target.value })
+                        setUserData({
+                          ...userData,
+                          firstname: e.target.value,
+                        })
                       }
                       placeholder="First Name"
                     />
@@ -469,6 +468,7 @@ const Checkout = () => {
           </div>
         </div>
       </div>
+      )
     </>
   );
 };
