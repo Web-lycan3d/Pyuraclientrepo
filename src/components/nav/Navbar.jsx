@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const [navState, setNavState] = useState(false)
+  const [navState, setNavState] = useState(false);
   return (
     <div className="nav-container">
       <div className="nav-contents">
@@ -53,27 +53,42 @@ const Navbar = () => {
             }>
             <ul className="nav-bar-ul">
               <li className="menu-li-flex">
-                <Link to="/" className="nav-links" onClick={() => setNavState(!navState)}>
+                <Link
+                  to="/"
+                  className="nav-links"
+                  onClick={() => setNavState(!navState)}>
                   Home
                 </Link>
               </li>
               <li className="menu-li-flex">
-                <Link to="/user/order" className="nav-links" onClick={() => setNavState(!navState)}>
+                <Link
+                  to="/user/order"
+                  className="nav-links"
+                  onClick={() => setNavState(!navState)}>
                   Order Status
                 </Link>
               </li>
               <li className="menu-li-flex">
-                <Link to="/user/product" className="nav-links" onClick={() => setNavState(!navState)}>
+                <Link
+                  to="/user/product"
+                  className="nav-links"
+                  onClick={() => setNavState(!navState)}>
                   Get Yours
                 </Link>
               </li>
               <li className="menu-li-flex">
-                <Link to="/about" className="nav-links" onClick={() => setNavState(!navState)}>
+                <Link
+                  to="/about"
+                  className="nav-links"
+                  onClick={() => setNavState(!navState)}>
                   About
                 </Link>
               </li>
               <li className="menu-li-flex">
-                <Link to="/contact" className="nav-links" onClick={() => setNavState(!navState)}>
+                <Link
+                  to="/contact"
+                  className="nav-links"
+                  onClick={() => setNavState(!navState)}>
                   Contact
                 </Link>
               </li>

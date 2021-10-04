@@ -326,7 +326,7 @@
     margin-bottom: 1rem;
     border-bottom: 2px solid #1a2771;
     .checkout-total-1 {
-      width: 65%;
+      width: 90%;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -343,9 +343,14 @@
   }
   .checkout-total-main {
     width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    .chechout-total-main-1 {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+    }
     h5 {
       margin-top: 0.5rem;
       font-size: 1.2rem;
@@ -371,8 +376,6 @@
   margin-top: 1.5rem;
   button {
     @include button();
-    background: rgb(245, 59, 59);
-    border: 2px solid rgb(245, 59, 59);
   }
 }
 @media screen and (max-width: 1500px) {

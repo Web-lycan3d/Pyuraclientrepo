@@ -28,9 +28,9 @@ $maincolor: #1a2771;
   align-items: center;
 }
 .sixth-img {
-  height: 90%;
+  height: 85%;
   img {
-    width: 120%;
+    width: 125%;
     height: 100%;
     object-fit: contain;
   }
@@ -39,7 +39,7 @@ $maincolor: #1a2771;
   width: 45%;
   font-family: "Poppins", sans-serif;
   h4 {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-weight: 600;
     color: $maincolor;
     margin: 0.6rem 0 1.8rem;
@@ -49,6 +49,7 @@ $maincolor: #1a2771;
     line-height: 1.9;
     font-weight: 400;
     color: #1a2771e7;
+    font-size: 1.05rem;
     width: 85%;
     display: inline-block;
   }

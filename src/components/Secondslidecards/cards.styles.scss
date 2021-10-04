@@ -12,7 +12,7 @@ $maincolor: #1a2771;
   width: 265px;
   height: 300px;
   padding: 0.8rem 0.8rem;
-  border: 2px solid rgb(207, 207, 207);
+  border: 2px solid rgba(207, 207, 207, 0);
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
@@ -61,6 +61,7 @@ $maincolor: #1a2771;
     transform: translateY(-10px);
     box-shadow: 0px 20px 40px #1a277180;
     border-radius: 0;
+    border-radius: 15px;
     background: $maincolor;
     h4 {
       color: white;

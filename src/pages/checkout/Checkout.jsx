@@ -456,10 +456,12 @@ const Checkout = () => {
                 )}
               </div>
               <div className="checkout-total-main">
-                <h5>
-                  Total <sub>Inclusive of GST</sub>{" "}
-                </h5>
-                <span>Rs {TotalPrice}</span>
+                <div className="chechout-total-main-1">
+                  <h5>
+                    Total <sub>Inclusive of GST</sub>{" "}
+                  </h5>
+                  <span>Rs {TotalPrice}</span>
+                </div>
               </div>
               <div className="checkout-submit-btn">
                 <button onClick={handleFormSubmit}>Pay Now</button>
