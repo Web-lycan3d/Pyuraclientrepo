@@ -2,22 +2,19 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+
+import SweetAlert from "react-bootstrap-sweetalert";
 
 const Model = (props) => {
-  console.log(props);
   const renderAlert = () => {
     return (
       <>
-        {window.Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Something went wrong!",
-          showCancelButton: true,
-          showConfirmButton: false,
-        }).then((res) => {
-          res && props.modalState();
-        })}
+        <SweetAlert
+          warning
+          title="Verify Otp first!"
+          onConfirm={() => props.modalState()}
+          confirmBtnCssClass="confirm-btn"
+        />
       </>
     );
   };
