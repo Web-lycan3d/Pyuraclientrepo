@@ -129,6 +129,17 @@ $maincolor: #1a2771;
     }
   }
 }
+@media only screen and (max-width: 1600px) and (min-width: 1400px) and (min-height: 600px) and (max-height: 800px) {
+  .second-container {
+    .second-cards {
+      position: relative;
+      top: 3.5rem;
+    }
+  }
+  .second-text {
+    top: 4.5rem;
+  }
+}
 @media only screen and (max-width: 1400px) and (min-width: 1300px) and (min-height: 600px) and (max-height: 800px) {
   .second-container {
     position: relative;
