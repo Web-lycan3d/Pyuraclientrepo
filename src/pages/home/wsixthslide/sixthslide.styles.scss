@@ -28,10 +28,13 @@ $maincolor: #1a2771;
   align-items: center;
 }
 .sixth-img {
-  height: 85%;
+  height: auto;
+  width : 100%;
+  display : flex;
+  justify-content: center;
   img {
-    width: 125%;
-    height: 100%;
+    width: 65%;
+    height: auto;
     object-fit: contain;
   }
 }
