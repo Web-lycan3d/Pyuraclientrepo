@@ -137,6 +137,8 @@
 
   .checkout-details-left {
     width: 40%;
+    padding-right: 10%;
+    border-right: 2px solid #1a2771;
     h1 {
       font-weight: 500;
       color: #1a2771;
@@ -270,6 +272,11 @@
       height: 120px;
       object-fit: cover;
     }
+    .branding {
+      margin: 0.25rem 0;
+      font-size: 1.1rem;
+      color: #1a2771;
+    }
     p {
       font-size: 1rem;
       sub {
@@ -348,7 +355,7 @@
       width: 90%;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: baseline;
       margin: 0 auto;
     }
     h5 {
@@ -417,11 +424,12 @@
     right: 3rem;
     .checkout-details-left {
       width: 45%;
+      padding-right: 4%;
     }
     .checkout-details-right {
       width: 55%;
       position: relative;
-      left: 12%;
+      left: 6%;
       right: 0;
     }
   }
@@ -486,6 +494,8 @@
     right: 0;
     .checkout-details-left {
       width: 100%;
+      padding-right: 0;
+      border-right: none;
     }
   }
 }

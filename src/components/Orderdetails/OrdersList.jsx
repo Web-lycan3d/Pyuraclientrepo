@@ -6,7 +6,7 @@ const OrdersList = ({ userData }) => {
     <div className="orderdetails-box">
       <div className="orderdetails-header">
         <h1>{userData.firstname + " " + userData.lastname}</h1>
-        <h4>OrderStaus : {userData.orderStatus}</h4>
+        <h4>OrderStatus : {userData.orderStatus}</h4>
       </div>
       <div className="orderdetails-contents">
         <div className="orderdetails-left">
@@ -23,7 +23,7 @@ const OrdersList = ({ userData }) => {
             <span className="orderdetail-span">{userData.email}</span>
           </div>{" "}
           <div className="orderdetails-left-address">
-            <p>Shipping Address</p>
+            <p>Shipping Address :</p>
             <span className="address-box">{userData.address}</span>
           </div>
         </div>

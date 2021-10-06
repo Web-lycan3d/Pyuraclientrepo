@@ -29,7 +29,7 @@ const Firstpage = () => {
           </span>
         </div>
         <div className="firstpage-img">
-          <img src="https://i.ibb.co/WKbtMcw/Pyura-renders-2.webp" alt="err" />
+          <img src="https://i.ibb.co/YyBKxTR/p2.webp" alt="err" />
         </div>
 
         <div className="center-text">

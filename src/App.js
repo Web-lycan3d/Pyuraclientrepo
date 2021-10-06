@@ -10,6 +10,8 @@ const Contact = lazy(() => import("./pages/contact/contact.component"));
 const Home = lazy(() => import("./pages/home/Home"));
 const OrderStatus = lazy(() => import("./pages/orderStatus/OrderStatus"));
 const About = lazy(() => import("./pages/about/about.component"));
+const PrivacyPolicies = lazy(() => import("./pages/privacy/Privacy"));
+const TermsAndConditions = lazy(() => import("./pages/privacy/Terms"));
 const AdminPanel = lazy(() => import("./pages/admin/admin.component"));
 
 const Product = lazy(() => import("./pages/Product/Product"));
@@ -43,6 +45,8 @@ const App = () => {
             <Route exact path="/user/checkout" component={Checkout} />
             <Route exact path="/admin/:id" component={AdminPanel} />
             <Route exact path="/user/order/created" component={Ordersucces} />
+            <Route exact path="/privacy_policies" component={PrivacyPolicies} />
+            <Route exact path="/terms_conditions" component={TermsAndConditions} />
           </Switch>
         </AnimatePresence>
       </Suspense>

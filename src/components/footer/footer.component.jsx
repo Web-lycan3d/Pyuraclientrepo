@@ -21,10 +21,10 @@ const Footer = () => {
         </div>
         <div className="footer-privacy">
           <span className="privacy">All Rights Reserved</span>
-          <Link className="privacy" to="#">
+          <Link className="privacy" to="/terms_conditions">
             Terms of Use
           </Link>
-          <Link className="privacy" to="#">
+          <Link className="privacy" to="/privacy_policies">
             Privacy Policies
           </Link>
         </div>

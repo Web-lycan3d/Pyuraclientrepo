@@ -1,0 +1,82 @@
+/** @format */
+
+.container {
+  padding: 2% 15%;
+
+  .heading {
+    font-size: 50px;
+    color: #1a2771;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 3%;
+    font-family: "poppins", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .main-subheading {
+    font-size: 40px;
+    color: rgb(39, 39, 39);
+    font-weight: 600;
+    text-align: start;
+    font-family: "poppins", sans-serif;
+    padding: 3% 0%;
+  }
+
+  span {
+    color: #09295d;
+    text-decoration: underline;
+    font-family: "poppins", sans-serif;
+  }
+
+  .subheading {
+    font-size: 31px;
+    color: rgba(32, 41, 155, 0.74);
+    font-weight: 600;
+    text-align: start;
+    padding: 2% 0% 1%;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+    font-family: "poppins", sans-serif;
+    text-decoration: underline;
+    margin-bottom: 0.8rem;
+  }
+
+  p {
+    font-size: 16px;
+    color: grey;
+    padding: 1% 0%;
+    letter-spacing: 0.7px;
+    font-family: "roboto", sans-serif;
+  }
+
+  .address {
+    font-size: 18px;
+    color: grey;
+    padding: 5px 0;
+    font-family: "roboto", sans-serif;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .container {
+    padding: 1% 4%;
+  }
+  .container .heading {
+    font-size: 34px;
+    color: #1a2771;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 12%;
+
+    text-transform: uppercase;
+  }
+
+  .container .subheading {
+    font-size: 25px;
+
+    font-weight: 600;
+    text-align: start;
+    padding: 2% 0% 1%;
+    text-transform: capitalize;
+  }
+}

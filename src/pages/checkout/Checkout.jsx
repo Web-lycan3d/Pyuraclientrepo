@@ -416,6 +416,7 @@ const Checkout = () => {
                   src="https://i.ibb.co/WKbtMcw/Pyura-renders-2.webp"
                   alt="err"
                 />
+                <p className="branding">Pyura air</p>
                 <p>
                   <sub>Rs 6999/unit</sub> {itemquanity}
                 </p>
@@ -458,7 +459,7 @@ const Checkout = () => {
               <div className="checkout-total-main">
                 <div className="chechout-total-main-1">
                   <h5>
-                    Total <sub>Inclusive of GST</sub>{" "}
+                    Total (Inclusive of GST){" "}
                   </h5>
                   <span>Rs {TotalPrice}</span>
                 </div>

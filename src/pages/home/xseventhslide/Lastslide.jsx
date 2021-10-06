@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import {Link} from "react-router-dom";
 import "./lastslide.styles.scss";
 
 const Lastslide = () => {
@@ -23,7 +24,7 @@ const Lastslide = () => {
             advantage of what we have to offer and breathe more peacefully
             moving forward.
           </span>
-          <button>Get Yours!</button>
+          <Link to="/user/product"><button>Get Yours!</button></Link>
         </div>
         <div className="seventh-img">
           <img

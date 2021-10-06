@@ -52,8 +52,9 @@
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid #1a2771;
+  gap: 5rem;
   .orderdetails-left {
-    width: 20rem;
+    width: 50%;
     overflow-x: auto;
     .orderdetails-left-contents {
       display: flex;
@@ -72,6 +73,7 @@
         font-weight: 400;
         color: #1a2771;
         font-size: 0.85rem;
+        width: 60%;
       }
     }
     .orderdetails-left-address {
@@ -111,7 +113,7 @@
     }
   }
   .orderdetails-right {
-    width: 15rem;
+    width: 50%;
     .orderdetails-right-header {
       display: flex;
       justify-content: space-between;
