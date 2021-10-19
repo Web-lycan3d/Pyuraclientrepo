@@ -9,7 +9,10 @@ const SixthSlide = () => {
     <div className="sixth-container">
       <div className="sixth-contents">
         <div className="sixth-img-header">
-          <img src={header} alt="filtration" />
+          <img
+            src="https://i.ibb.co/wsRp1g1/Group-80-min.png"
+            alt="filtration"
+          />
         </div>
         <div className="sixth-contents-main">
           <div className="sixth-img">
