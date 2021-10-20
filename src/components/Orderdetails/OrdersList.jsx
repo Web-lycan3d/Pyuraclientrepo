@@ -56,7 +56,7 @@ const OrdersList = ({ userData }) => {
           </div>
           <div className="orderdetails-total">
             <h3>
-              Total <sub>including gst</sub>{" "}
+              Total (including gst){" "}
             </h3>
             <p>Rs {userData.orderTotal}</p>
           </div>
