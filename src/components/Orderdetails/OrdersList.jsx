@@ -11,19 +11,19 @@ const OrdersList = ({ userData }) => {
       <div className="orderdetails-contents">
         <div className="orderdetails-left">
           <div className="orderdetails-left-contents">
-            <p>OrderId</p>
+            <p>OrderId:</p>
             <span className="orderdetail-span">{userData.orderId}</span>
           </div>
           <div className="orderdetails-left-contents">
-            <p>Phone no.</p>
+            <p>Phone no:</p>
             <span className="orderdetail-span">{userData.phonenumber}</span>
           </div>
           <div className="orderdetails-left-contents">
-            <p>Email id</p>
+            <p>Email id:</p>
             <span className="orderdetail-span">{userData.email}</span>
           </div>{" "}
           <div className="orderdetails-left-address">
-            <p>Shipping Address :</p>
+            <p>Shipping Address:</p>
             <span className="address-box">{userData.address}</span>
           </div>
         </div>
