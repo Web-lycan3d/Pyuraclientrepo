@@ -12,7 +12,6 @@ const Contact = () => {
         <img src="https://i.ibb.co/kqkwX9M/Group-5423.png" alt="Contact" />
         <div className="contact-title">
           <h1>Contact us</h1>
-          <h4>Lorem Ipsum Dolor Sit Amet, Consecteur Adipiscing Elit</h4>
         </div>
       </div>
       <div className="contact-container">

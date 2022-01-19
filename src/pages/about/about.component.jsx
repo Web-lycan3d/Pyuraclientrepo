@@ -48,7 +48,7 @@ const About = () => {
               With the unpredictability of what is in the air around us, Pyura
               Air masks alleviate a number of breathing concerns and offers a
               seamless solution to you! <br /> Take the opportunity to relax and
-              be stress-free with us! Breathe Easy :")"
+              be stress-free with us! Breathe Easy.
             </p>
           </div>
           <div className="greeting">
